@@ -146,7 +146,6 @@ Dans cet exemple, la classe Ordinateur est composée de la classe Processeur et 
 
 En général, la composition est utilisée pour créer des objets plus complexes à partir de classes plus simples, tandis que l'héritage est utilisé pour partager du code commun entre classes.
 
-=======
 
 ## Agregation
 
