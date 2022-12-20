@@ -28,3 +28,19 @@ Il est important de bien comprendre l'association et de l'utiliser de manière a
 ## Composition
 
 ## Héritage
+l'Héritage permet de définir une classe enfant qui hérite réutilise, étend ou modifie les comportements de sa classe parent. Cette classe est appelée la "classe dérivée"
+Le C# n'autorise que l'héritage simple, c'est à dire qu'une classe ne peut hériter que d'une seule autre classe.
+
+```C#
+public class Personne
+{
+int Age;
+char Nom;
+char Prenom;
+}
+
+public class Eleve : Personne
+{
+    int Classement;
+}
+```
