@@ -62,6 +62,7 @@ L'héritage est une relation entre deux classes en C# qui permet à une classe (
 Voici un exemple d'héritage en C# :
 
 ```C#
+// Classe principal
 public class Animal
 {
     public string Nom { get; set; }
@@ -73,6 +74,7 @@ public class Animal
     }
 }
 
+// Classe Chat qui hérite de classe Animal
 public class Chat : Animal
 {
     public string CouleurPelage { get; set; }
@@ -84,4 +86,4 @@ public class Chat : Animal
 }
 ```
 
-Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode Bouger() qui affiche un message dans la console, la classe Chat peut redéfinir cette méthode pour afficher un message différent.
+Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode Bouger().
