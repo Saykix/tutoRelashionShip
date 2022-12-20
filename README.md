@@ -23,8 +23,36 @@ public class Adresse
 
 Dans cet exemple, la classe Client a une association avec la classe Adresse, car elle a un champ membre de type Adresse. Cependant, l'association est faible, car la classe Client n'a pas besoin de la classe Adresse pour exister. Si la classe Adresse était supprimée, la classe Client pourrait être modifiée pour utiliser une autre classe ou une simple chaîne de caractères pour stocker l'adresse.
 
-Il est important de bien comprendre l'association et de l'utiliser de manière appropriée afin de créer un code bien structuré et facile à maintenir.
-
 ## Composition
+
+La composition est une relation entre deux classes en C# qui indique que l'une des classes est constituée de l'autre de manière essentielle. Cette relation est généralement implémentée en créant une instance de la classe composée dans l'autre classe, comme un champ membre.
+
+Voici un exemple de composition en C# :
+
+```C#
+public class Ordinateur
+{
+    // L'ordinateur est composé d'un processeur et de deux disques durs
+    public Processeur Processeur { get; set; }
+    public DisqueDur DisqueDur1 { get; set; }
+    public DisqueDur DisqueDur2 { get; set; }
+}
+
+public class Processeur
+{
+    public string Marque { get; set; }
+    public int NombreCoeurs { get; set; }
+}
+
+public class DisqueDur
+{
+    public int Capacite { get; set; }
+    public int VitesseLecture { get; set; }
+}
+```
+Dans cet exemple, la classe Ordinateur est composée de la classe Processeur et de la classe DisqueDur, car elle a des champs membres de ces types. La composition est forte, car la classe Ordinateur ne peut exister sans ces classes. Si l'une des classes composées était supprimée, la classe Ordinateur ne pourrait plus être utilisée.
+
+En général, la composition est utilisée pour créer des objets plus complexes à partir de classes plus simples, tandis que l'héritage est utilisé pour partager du code commun entre classes.
+
 
 ## Héritage
