@@ -56,3 +56,32 @@ En général, la composition est utilisée pour créer des objets plus complexes
 
 
 ## Héritage
+
+L'héritage est une relation entre deux classes en C# qui permet à une classe (appelée "classe fille") de hériter de tous les membres (champs, propriétés, méthodes, etc.) d'une autre classe (appelée "classe mère"). La classe fille peut également redéfinir ou étendre les membres hérités.
+
+Voici un exemple d'héritage en C# :
+
+```C#
+public class Animal
+{
+    public string Nom { get; set; }
+    public int Age { get; set; }
+
+    public void Bouger()
+    {
+        Console.WriteLine("L'animal bouge.");
+    }
+}
+
+public class Chat : Animal
+{
+    public string CouleurPelage { get; set; }
+
+    public void Miauler()
+    {
+        Console.WriteLine("Le chat miaule.");
+    }
+}
+```
+
+Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode Bouger() qui affiche un message dans la console, la classe Chat peut redéfinir cette méthode pour afficher un message différent.
