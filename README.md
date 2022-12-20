@@ -145,7 +145,7 @@ public class DisqueDur
 Dans cet exemple, la classe Ordinateur est composée de la classe Processeur et de la classe DisqueDur, car elle a des champs membres de ces types. La composition est forte, car la classe Ordinateur ne peut exister sans ces classes. Si l'une des classes composées était supprimée, la classe Ordinateur ne pourrait plus être utilisée.
 
 En général, la composition est utilisée pour créer des objets plus complexes à partir de classes plus simples, tandis que l'héritage est utilisé pour partager du code commun entre classes.
-<<<<<<< HEAD
+
 =======
 
 ## Agregation
@@ -206,4 +206,3 @@ public class Chat : Animal
 ```
 
 Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode DanseFortnite().
->>>>>>> a1636d5f32043d00a7d9af439256a5a5a3059443
