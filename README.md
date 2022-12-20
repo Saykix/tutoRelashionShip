@@ -1,4 +1,4 @@
-# Tuto relation (relation ship)
+# Tuto relation (Relation ship)
 
 ## Qu'est ce qu'une relation ?
 
@@ -20,3 +20,23 @@ Il existe plusieurs types de relations qui peuvent exister entre les tables d'un
 - La relation 1-1 (un-à-un) : dans cette relation, une ligne d'une table ne peut être liée qu'à une seule ligne d'une autre table. Par exemple, une table "personnes" peut être liée à une table "adresses" de manière telle qu'une personne n'a qu'une seule adresse.
 
 Il est important de définir les relations entre les tables d'une base de données de manière à ce que l'ensemble de la base de données soit organisé de manière cohérente et à ce que les données puissent être manipulées de manière efficace.
+
+## Est-il possible d'écrire les relations directement en langage de programmation ?
+
+Oui il est possible d'écrire du SQL directemment en langague de programmation on appel cela un ORM (Object-Relational Mapping).
+Le but est est de simplifier l'accès aux données en utilisant un modèle de programmation orienté objet plutôt qu'une approche basée sur des requêtes SQL. Cela permet de manipuler les données de la base de données de manière plus naturelle pour les développeurs, en utilisant des objets et des méthodes plutôt que des requêtes SQL complexes.
+
+Voici comment fonctionne généralement un ORM :
+
+- Le développeur définit des classes qui représentent les objets de l'application (par exemple, "Client", "Commande", etc.).
+- L'ORM crée une table dans la base de données pour chaque classe définie.
+- Le développeur utilise les objets et les méthodes de l'ORM pour effectuer des opérations sur les données (par exemple, ajouter un nouveau client, récupérer une liste de commandes, etc.).
+- L'ORM se charge de traduire ces opérations en requêtes SQL et de les exécuter sur la base de données.
+
+Les ORM sont particulièrement utiles lorsque l'on travaille avec une base de données relationnelle et un langage de programmation orienté objet. Ils permettent de simplifier l'accès aux données et de rendre le code plus lisible et plus facile à maintenir.
+
+
+
+
+
+
