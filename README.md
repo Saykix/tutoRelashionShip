@@ -84,7 +84,7 @@ Le C# n'autorise que l'héritage simple. C'est à dire qu'une classe ne peut hé
 Voici un exemple d'héritage en C# :
 
 ```C#
-// Classe principal du programme
+// Classe principal du programme.
 public class Animal
 {
     // L'Animal est composé d'un Nom de sont Age.
