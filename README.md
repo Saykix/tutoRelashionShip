@@ -101,3 +101,24 @@ public class Chat : Animal
 ```
 
 Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode DanseFortnite().
+
+
+## Agregation
+
+Une agrégation modélise la relation "se compose de" entre deux classes. Si un objet A est composé d'un objet B, alors B peut vivre sans A.
+
+```C#
+public class Employe
+{
+    private Projet Emploi;
+    public Employe(Projet emploi)
+    {
+        this.Emploi = emploi;
+    }
+}
+
+public class Emploi 
+{
+    public string taf {get; set;}
+}
+```
