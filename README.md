@@ -7,12 +7,14 @@ L'association est une relation entre deux classes en C# qui indique que l'une de
 Voici un exemple d'association en C# :
 
 ```C#
+// Classe Client du même "niveau" que Adresse
 public class Client
 {
     // Le client a une adresse
     public Adresse Adresse { get; set; }
 }
 
+// Classe Adresse du même "niveau" que Client
 public class Adresse
 {
     public string Rue { get; set; }
@@ -30,22 +32,28 @@ La composition est une relation entre deux classes en C# qui indique que l'une d
 Voici un exemple de composition en C# :
 
 ```C#
+// Classe Ordinateur du même "niveau" que Processeur et DisqueDur
 public class Ordinateur
 {
-    // L'ordinateur est composé d'un processeur et de deux disques durs
+    // L'ordinateur est composé d'un processeur et de deux disques durs.
+    // Il y a une relation entre Ordinateur avec Processeur et DisqueDur.
     public Processeur Processeur { get; set; }
     public DisqueDur DisqueDur1 { get; set; }
     public DisqueDur DisqueDur2 { get; set; }
 }
 
+// Classe Processeur du même "niveau" que Ordinateur et DisqueDur
 public class Processeur
 {
+    // Le Processeur est composé d'une Marque de sont NombreCoeurs
     public string Marque { get; set; }
     public int NombreCoeurs { get; set; }
 }
 
+// Classe DisqueDur du même "niveau" que Processeur et Ordinateur
 public class DisqueDur
 {
+    // Le DisqueDur est composé d'une Capacite de sa VitesseLecture
     public int Capacite { get; set; }
     public int VitesseLecture { get; set; }
 }
@@ -63,23 +71,28 @@ Le C# n'autorise que l'héritage simple. C'est à dire qu'une classe ne peut hé
 Voici un exemple d'héritage en C# :
 
 ```C#
-// Classe principale
+// Classe principal du programme
 public class Animal
 {
+    // L'Animal est composé d'un Nom de sont Age
     public string Nom { get; set; }
-    public int Age { get; set; }
+    protected int Age { get; set; }
 
+    // Définition d'une méthode de classe DanseFortnite que le chat et c'est enfants peuvent utiliser
     public void DanseFortnite()
     {
         Console.WriteLine("L'animal effectue une danse Fortnite");
     }
 }
 
-// Classe Chat qui hérite de classe Animal
+// Classe Chat qui hérite de classe Animal. C'est donc une sous classe de la classe Animal
 public class Chat : Animal
 {
+    // Le Chat qui hérite de Animal est composé d'un Nom et de sont Age ET de sa CouleurPelage
     public string CouleurPelage { get; set; }
 
+    // Définition d'une méthode de classe Miauler que le chat et c'est enfant peuvent utiliser
+    // Le parents Animal ne peu pas utiliser la méthode Miauler()
     public void Miauler()
     {
         Console.WriteLine("jul jul jul");
