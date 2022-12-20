@@ -68,9 +68,9 @@ public class Animal
     public string Nom { get; set; }
     public int Age { get; set; }
 
-    public void Bouger()
+    public void DanseFortnite()
     {
-        Console.WriteLine("L'animal bouge.");
+        Console.WriteLine("L'aminal effectue une danse Fortnite");
     }
 }
 
@@ -86,4 +86,4 @@ public class Chat : Animal
 }
 ```
 
-Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode Bouger().
+Dans cet exemple, la classe Chat hérite de la classe Animal et peut donc utiliser tous les membres de cette classe, comme le nom et l'âge, ainsi que la méthode DanseFortnite().
