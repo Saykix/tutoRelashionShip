@@ -2,7 +2,7 @@
 
 ## Association
 
-L'association est une relation entre deux classes en C# qui indique que l'une des classes utilise l'autre de manière occasionnelle. Cette relation est généralement implémentée en créant une instance de la classe utilisée dans l'autre classe, comme un champ membre.
+**L'association est une relation entre deux classes en C# qui indique que l'une des classes utilise l'autre de manière occasionnelle.** Cette relation est généralement implémentée en créant une instance de la classe utilisée dans l'autre classe, comme un champ membre.
 
 Voici un exemple d'association en C# :
 
@@ -27,7 +27,7 @@ Dans cet exemple, la classe Client a une association avec la classe Adresse, car
 
 ## Composition
 
-La composition est une relation entre deux classes en C# qui indique que l'une des classes est constituée de l'autre de manière essentielle. Cette relation est généralement implémentée en créant une instance de la classe composée dans l'autre classe, comme un champ membre.
+**La composition est une relation entre deux classes en C# qui indique que l'une des classes est constituée de l'autre de manière essentielle.** Cette relation est généralement implémentée en créant une instance de la classe composée dans l'autre classe, comme un champ membre.
 
 Voici un exemple de composition en C# :
 
@@ -78,7 +78,7 @@ En général, la composition est utilisée pour créer des objets plus complexes
 
 ## Héritage
 
-L'héritage est une relation entre deux classes en C# qui permet à une classe (appelée "classe fille") d'hériter de tous les membres (champs, propriétés, méthodes, etc.) d'une autre classe (appelée "classe mère"). La classe fille peut également redéfinir ou étendre les membres hérités.
+**L'héritage est une relation entre deux classes en C# qui permet à une classe (appelée "classe fille") d'hériter de tous les membres (champs, propriétés, méthodes, etc.) ** d'une autre classe (appelée "classe mère"). La classe fille peut également redéfinir ou étendre les membres hérités.
 Le C# n'autorise que l'héritage simple. C'est à dire qu'une classe ne peut hériter que d'une seule autre classe.
 
 Voici un exemple d'héritage en C# :
@@ -98,7 +98,7 @@ public class Animal
     }
 }
 
-// Classe Chat qui hérite de classe Animal. C'est donc une sous classe de la classe Animal.
+// Classe Chat qui hérite de classe Animal. C'est donc une classe fille de la classe Animal.
 public class Chat : Animal
 {
     // Le Chat qui hérite de Animal est composé d'un Nom et de sont Age ET de sa CouleurPelage.
