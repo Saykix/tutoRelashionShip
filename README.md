@@ -37,7 +37,7 @@ public class Ordinateur
 {
     // L'ordinateur est composé d'un processeur et de deux disques durs.
     // Il y a une relation entre Ordinateur avec Processeur et DisqueDur.
-    public Processeur Processeur { get; set; }
+    public Processeur processeur { get; set; }
     public DisqueDur DisqueDur1 { get; set; }
     public DisqueDur DisqueDur2 { get; set; }
 }
